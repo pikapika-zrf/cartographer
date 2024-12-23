@@ -52,7 +52,8 @@ TRAJECTORY_BUILDER_2D = {
       num_threads = 1,
     },
   },
-
+  
+-- 运动过滤，检测运动变化，避免机器人静止时插入数据
   motion_filter = {
     max_time_seconds = 5.,
     max_distance_meters = 0.2,
